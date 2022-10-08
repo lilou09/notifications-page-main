@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+
+:root {
+  --red: hsl(1, 90%, 64%);
+  --blue: hsl(219, 85%, 26%);
+
+  --white: hsl(0, 0%, 100%);
+  --verylightgrayishblue: hsl(210, 60%, 98%);
+  --lightgrayishblue1: hsl(211, 68%, 94%);
+  --lightgrayishblue2: hsl(205, 33%, 90%);
+  --grayishblue: hsl(219, 14%, 63%);
+  --darkgrayishblue: hsl(219, 12%, 42%);
+  --verydarkblue: hsl(224, 21%, 14%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.notifications {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.notifications h1 {
+  color: var(--verydarkblue);
+  font-weight: 800;
+}
+
+.notifications h1.number {
+  background-color: var(--blue);
+  padding: 0 15px;
+  color: var(--white);
+  border-radius: 6px;
+}
+
+.header h2 {
+  font-weight: 500;
+  color: var(--darkgrayishblue);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.notification {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-weight: 800;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.rizky {
+  border: 1px solid var(--lightgrayishblue2);
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.chess {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.club {
+  font-weight: 800;
+  color: var(--blue);
+}
+
+.red_dot {
+  font-size: 11px;
+  color: var(--red);
+}
+
+.unread {
+  background-color: var(--lightgrayishblue1);
+  border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 800px;
+    margin: auto;
+  }
+}
